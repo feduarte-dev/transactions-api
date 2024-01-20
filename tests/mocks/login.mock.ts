@@ -11,6 +11,7 @@ const existingUser = {
   password: hashPassword, 
   name: 'user1'
 };
+
 const validLoginBody = { email: validEmail, password: validPassword };
 
 export default {
