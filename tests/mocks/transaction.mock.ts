@@ -1,20 +1,31 @@
-import { Transaction } from "src/types/Transaction"
-const existingTransaction: Transaction = {
-    id: 1,
-    name: 'mock-transaction',
-    price: 99,
-    type: 'Saque' ,
-    userId: 1,
-  }
+import { Transaction } from 'src/types/Transaction';
 
-const transactionBody = {
-    name: 'teste',
-    price: 10,
-    type: 'Saque',
-    userId: 1
+const emptyNameTransaction: Transaction = {
+  id: 1,
+  name: '',
+  price: 0,
+  type: 'Saque',
+  userId: 2
+}
+
+const validTransaction: Transaction = {
+  id: 1,
+  name: 'Boletos',
+  price: 1,
+  type: 'Saque',
+  userId: 1
+}
+
+const validTransactionFromDB: Transaction = {
+  id: 1,
+  name: 'Boletos',
+  price: 1,
+  type: 'Saque',
+  userId: 1
 }
 
 export default {
-    existingTransaction,
-    transactionBody
+  validTransaction,
+  validTransactionFromDB,
+  emptyNameTransaction
 }
