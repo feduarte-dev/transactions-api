@@ -50,7 +50,7 @@ The objective of this project is to develop unit and integration tests for an AP
    npm install
    ```
 
-5. If you want to application or run tests:
+5. If you want to run application or tests:
 
    ```bash
    npm run dev
